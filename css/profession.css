@@ -1,0 +1,291 @@
+/*中间轮播大图*/
+
+.mooc_jumbotron {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    background: url("../images/1.png") no-repeat;
+    text-align: center;
+    height: 300px;
+    color: #fff;
+    position: relative;
+}
+.mooc_jumbotron p {
+    /*margin-bottom: 15px;*/
+    font-size: 18px;
+    line-height: 36px;
+    /*font-weight: 200;*/
+    margin: 40px auto 15px;
+}
+.mooc_jumbotron > hr {
+    border-top-color: #d5d5d5;
+}
+.container .mooc_jumbotron,
+.container-fluid .mooc_jumbotron {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px;
+}
+.mooc_jumbotron .container {
+    max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .mooc_jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .container .mooc_jumbotron,
+    .container-fluid .mooc_jumbotron {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .mooc_jumbotron h2,
+    .mooc_jumbotron .h2 {
+        font-size: 36px;
+    }
+    .one {
+        color: white;
+        width: 580px;
+        font-size: 18px;
+        margin: 60px auto 0;
+    }
+    .one span, .one i {
+        float: left;
+    }
+
+    .one span {
+        width: 75px;
+    }
+
+    .one i {
+        display: inline-block;
+        height: 30px;
+        width: 50px;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .mooc_jumbotron {
+        background: url("../images/head.png") no-repeat;
+    }
+}
+
+.main_info {
+    display: none;
+}
+.main_info.active {
+    display: block;
+}
+
+/*轮播图下面小框*/
+
+.info-nav2 {
+    position: absolute;
+    bottom: -40px;
+    left: 7%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    height: 120px;
+    width: 88%;
+    padding-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px #ccc;
+}
+.info-nav2 a {
+    width: 150px;
+    height: 65px;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+}
+.info-nav2 em.active{
+    position: absolute;
+    bottom: -35px;
+    left: 20%;
+    display: block;
+    width: 65%;
+    height:2px;
+    background: red;
+}
+.info-nav2 span{
+    width: 80px;
+}
+.info-nav2 .nav-log1 {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/all_icon.png") no-repeat center;
+}
+
+.info-nav2 .nav-log2 {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/web_icon.png") no-repeat center;
+}
+
+.info-nav2 .nav-log3 {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/java_icon.png") no-repeat center;
+}
+
+.info-nav2 .nav-log4 {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/android_icon.png") no-repeat center;
+}
+
+.info-nav2 .nav-log5 {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/php_icon.png") no-repeat center;
+}
+
+.info-nav2 .nav-log6 {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url("../images/ios_icon.png") no-repeat center;
+}
+
+
+/*下面css*/
+
+
+/*一开始的一个空的盒子 用于占位置*/
+.main {
+    margin-top: 60px;
+}
+/*.main {*/
+/*height: 1780px;*/
+/*}*/
+
+/*a标签样式*/
+.main .w .item {
+    width: 270px;
+    height: 332px;
+    color: #666;
+    /*margin-right: 24px;*/
+    margin-bottom: 24px;
+}
+
+.main .w .item:nth-child(4n) {
+    margin-right: 0px;
+}
+
+/*a标签hover样式*/
+.main .w .item:hover .desc-box .name {
+    color: #ff7802;
+}
+
+/*==================================*/
+/*这里图片路径修改过了,还有images文件夹里的16个文件名也改过*/
+/*==================================*/
+
+/*a标签里面的上半块图片板块*/
+.item .img-box {
+    width: 270px;
+    height: 148px;
+    border-radius: 8px;
+    background-size: cover;
+    position: relative;
+}
+.img-box .img-up{
+    top: 12px;
+    left: 0px;
+    width: 270px;
+    height: 148px;
+    z-index: 3;
+    background-size: cover;
+    position: absolute;
+    border-radius: 8px;
+}
+.img-box .img-mid{
+    top: 16px;
+    left: 4px;
+    width: 262px;
+    height: 148px;
+    opacity: 0.4;
+    z-index: 2;
+    background-size: cover;
+    position: absolute;
+    border-radius: 8px;
+}
+
+.img-box .img-down{
+    top: 20px;
+    left: 8px;
+    width: 254px;
+    height: 148px;
+    opacity: 0.2;
+    z-index: 1;
+    background-size: cover;
+    position: absolute;
+    border-radius: 8px;
+}
+
+/*a标签里面的下板块文字板块*/
+.item .desc-box {
+    padding-left: 11px;
+    margin-top: 16px;
+}
+
+/*文字板块里面分4块 name是最上面一行的*/
+.item .desc-box .name {
+    font-size: 16px;
+    color: #07111B;
+    padding-top: 11px;
+    line-height: 24px;
+}
+
+/*文字板块里的第二块*/
+.item .desc-box .desc {
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 24px;
+}
+
+/*文字板块的第三块*/
+.item .desc-box .content {
+    font-size: 12px;
+    color: #93999F;
+    line-height: 24px;
+    width: 240px;
+}
+
+/*文字板块的第四块*/
+.item .desc-box .price {
+    font-size: 12px;
+    color: #4D555D;
+    line-height: 20px;
+    padding-top: 21px;
+}
+
+/*切换div*/
+
+.info-nav2-item {
+    display: none;
+}
+.info-nav2-item a {
+    display: inline-block;
+    width: 270px;
+    height: 332px;
+}
+.info-nav2-item.active {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*上面img-box里面的背景图的路径有改动*/
+.main .w .item .desc-box .desc span:last-child {
+    color: #FF9900;
+}

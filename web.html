@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前端课程</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!--引入通用css文件-->
+    <link rel="stylesheet" href="css/base.css">
+    <!--引入当前页面css-->
+    <link rel="stylesheet" href="css/web.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<!--顶部导航-->
+<nav class="navbar mooc_default zindex" role="navigation">
+    <!--container 为版心-->
+    <div class="container-fluid">
+        <!-- 顶部nav区域开始 -->
+        <div class="navbar-header">
+            <!--手机版本导航-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--logo-->
+            <a class="navbar-brand" href="#">
+                <img class="img-responsive" src="images/logo.png" alt="">
+            </a>
+        </div>
+
+        <!-- 顶部nav菜单 -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="web.html" class="hover-write">课程</a></li>
+                <li><a href="profession.html" class="hover-write active">职业路径</a><i class="new"></i></li>
+                <li><a href="#" class="hover-write">实战</a></li>
+                <li><a href="#" class="hover-write">猿问</a></li>
+                <li><a href="#" class="hover-write">手记</a></li>
+            </ul>
+            <!--搜索区域-->
+            <form class="navbar-form navbar-left">
+                <div class="form-group" id="search">
+                    <!--<input type="text" class="form-control" placeholder="Search">-->
+                    <input type="text" value="请输入想搜索的内容...">
+                    <em class="hidden-sm hidden-xs hidden-md">前端入门</em>
+                    <em class="hidden-sm hidden-xs hidden-md">Java入门</em>
+                </div>
+                <i class="iconfont">&#xe634;</i>
+            </form>
+            <!--顶部右侧区域-->
+            <div class="nav navbar-nav navbar-right hidden-sm hidden-xs" id="nav-top-right">
+                <li><a class="app hover-write">下载app
+                    <div><img src="images/app.png" alt=""></div>
+                </a></li>
+                <li><a class="buy hover-write"><i class="iconfont">&#xe601;</i>&nbsp;&nbsp;购物车
+                    <div>
+                        <img src="images/buy.png" alt="">
+                    </div>
+                </a></li>
+                <li><a class="hover-red" href="#">注册</a></li>
+                <li>/</li>
+                <li><a class="hover-red" href="#">登录</a></li>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+
+<!--中间区域-->
+<!--视频-->
+<div class="img_video">
+    <i class="iconfont">&#xe777;</i>
+    <video src="video/H.mp4" controls="controls" width="600">
+    </video>
+</div>
+<div class="web_top clearfix">
+    <div class="container clearfix">
+        <div class="fl">职业路径 \ Web前端攻城狮培养计划</div>
+        <div class="center">
+            <p>Web前端攻城狮培养计划</p>
+            <h2>前端小白入门系列课程</h2>
+            <img class="video_play" src="images/video-start.png" alt="">
+        </div>
+        <div class="fr">
+            <i class="iconfont">&#xe673;</i>
+            <i class="iconfont">&#xe626;</i>
+            <i class="iconfont">&#xe698;</i>
+        </div>
+    </div>
+    <div class="container web_nav">
+        <ul class="fl">
+            <li><p>包含课程</p><h4>33</h4></li>
+            <li></li>
+            <li><p>视频时长</p><h4>52h</h4></li>
+            <li></li>
+            <li><p>学习人数</p><h4>2338</h4></li>
+            <li></li>
+            <li><p>综合评分</p><h4>9.93</h4></li>
+        </ul>
+        <div class="fr">
+            <h3 class="hidden-xs">￥499.00</h3>
+            <button>立即购买</button>
+        </div>
+    </div>
+</div>
+
+<!--介绍-->
+<div class="js">
+    <div class="container">
+        <ul class="tab">
+            <li>
+                <a href="#" class="active">详情介绍</a>
+            </li>
+            <li>
+                <a href="#">同学评价</a>
+                <i class="num1">403</i>
+            </li>
+            <li>
+                <a href="#">路径咨询</a>
+                <i class=num2>10</i>
+            </li>
+        </ul>
+        <div class=xqjs>
+            <h2>春风十里，不及前端入门的你</h2>
+            <h3>认识你，从揭开你的神秘面纱开始</h3>
+            <p class="web">Web前端开发是从网页制作演变而来，其中包括三个要素：HTML、CSS和JavaScript;<br>
+                Web前端用人数量已经远远超过主流编程语言的开发人员的数量。据统计，我国对于Web前
+                端工程师人员的缺口将达到12万。在2016年的岗位全年共招聘136848人，平均每月招聘人数
+                需求11412人</p>
+            <h3>熟悉你，从了解你的方方面面入手</h3>
+            <p class="web">实现Web端界面和移动端的界面；<br>
+                比如，网站设计、网页界面开发、前台数据的获取和绑定、以及动态特效等等</p>
+            <h3>选择你，并着手规划与你的未来</h3>
+            <p class="web">据职友集数据显示，2016年Web前端岗位月薪最高达到2-3万元，月平均薪资8190元，预计<br>
+                在2017年待遇将再一次水涨船高<br>
+                职位参考：</p>
+            <span>Web前端工程师</span><span class="txet">前端架构师</span><br>
+            <span>网站重构工程师</span><span class="txet">网页制作工程师</span><br>
+            <span>H5开发工程师</span><span class="txet">移动端开发工程师</span>
+        </div>
+    </div>
+</div>
+
+
+<!--前端入门小白部分-->
+<div class="qdxb">
+    <div class="container clearfix">
+        <img src="images/2-1.png" alt="">
+        <h2>前端小白入门从这里开始</h2>
+        <h3>我能get哪些技能？</h3>
+        <p class="txt">系统学习前端四大基础html、css、js、jQuery，配合400+练习题and教辅资料，你将有能力<br>
+            独立开发应用这些功能的项目</p>
+        <div class="qd">
+            <span>
+                轮播图特效
+                <p class="tb">网页特效中常常使用到的多张图片轮播</p>
+            </span>
+            <span class="team">
+                弹出层
+                <p class="tb">网站中登录、注册、警告、对话框常会用到</p>
+            </span>
+            <span class="toge">
+                瀑布流
+                <p class="tb">广泛用于电商网站的详细内容或者商品展示</p>
+            </span>
+            <span  class="team">
+                楼层导航
+                <p class="tb">单击楼层导航时，可滚动至对应的楼层；显示对
+                应楼层时，对应的导航项发生改变</p>
+            </span>
+            <span class="bt">
+                固定导航
+                <p class="tb">网页中常见的导航菜单固定显示在页面的某个部位</p>
+            </span>
+        </div>
+    </div>
+</div>
+
+<!--我的课程-->
+<div class="wdkc">
+    <div class="container clearfix">
+        <h2>我的课程将如何安排?</h2>
+        <h5>步骤1：HTML基础</h5>
+        <p class="cwb">超文本标记语言（英文缩写：HTML）是为“网页创建和其它可在网页浏览器中看到的信息”设计的一种标记语言,为搭建</p><br>
+        <p class="wb">网页结构做出第一步。本阶段主要介绍了HTML的语法基础、表格、表单、等标签，并有案例结合，达到学以致用。</p><br>
+        <ul class="kc clearfix hidden-xs" id="kc-js">
+            <li>
+                <p class="p-team">第1课</p>
+                <p>HTML基础</p>
+                <p>HTML是网页制作必备技能，在本课程主要介绍HTML概念、语法及常用基础标签</p>
+            </li>
+            <li>
+                <p class="p-team">第2课</p>
+                <p>HTML表格</p>
+                <p>表格在网页中用于数据和排版，本课程介绍表格概念、语法、操作，并通过案例掌握知识。</p>
+            </li>
+            <li>
+                <p class="p-team">第3课</p>
+                <p>HTML表单</p>
+                <p>表单用于收集用户信息，本课程介绍表单概念、语法及创建表单，并通过案例掌握知识。</p>
+            </li>
+            <li >
+                <p class="p-team">第4课</p>
+                <p>案例搭建网页HTML结构</p>
+                <p>本课程带领大家一起搭建一个网页HTML结构，并掌握网布局相应知识与技巧。</p>
+            </li>
+            <li class="hidden-sm hidden-xs hidden-md">
+                <p class="p-team">第5课</p>
+                <p>HTML基础测试</p>
+                <p>本课为考评，满分100学分，共20道题，限时30分钟</p>
+            </li>
+        </ul>
+        <h6>步骤2：CSS基础</h6>
+        <p class="cwb">CSS是一种定义样式结构如字体、颜色、位置等的语言，被用于描述网页上的信息格式化和现实的方式。本步骤主要介绍</p><br>
+        <p class="wb">了css的基础语法、选择器、文本、背景、列表、盒子模型、浮动、定位以及网页的布局方式。</p><br>
+        <ul class="csjc clearfix hidden-xs">
+            <li>
+                <p>第1课</p>
+                <p>CSS选择的艺术	</p>
+                <p>本课程主要介绍CSS语法、选择器、继承、层叠及优先级基础内容。</p>
+            </li>
+            <li>
+                <p>第2课</p>
+                <p>CSS文本样式</p>
+                <p>CSS为字体、文本提供了大量的样式属性，可以使我们的页面式更加丰富的多彩。</p>
+            </li>
+            <li class="hidden-sm">
+                <p>第3课</p>
+                <p>CSS背景和列表</p>
+                <p>本课程带领大家了解一下背景颜色、背景图片的相关知识，以及列表的多种样式</p>
+            </li>
+            <li class="hidden-sm hidden-md">
+                <p>第4课</p>
+                <p>盒子模型</p>
+                <p>我们就来学习一下css的盒子模型，理解了盒子模型，才能更好的排版，进行页面布局。</p>
+            </li>
+        </ul>
+        <div class="cssjc">
+            <a href="#">查看全部内容编排</a>
+        </div>
+        <div>
+            <h4>适合人群</h4>
+            <p>只需你对Web前端充满兴趣</p>
+        </div>
+    </div>
+</div>
+<!--推荐学习模块-->
+<div class="tjxxzh">
+    <p class="title">推荐学习组合</p>
+    <div class="main container">
+        <p class="main-title">从零基础入门到应用流行框架快速搭建网页</p>
+        <div class="middle-box">
+            <p>编程0基础</p>
+            <p>对前端开发有兴趣</p>
+            <p>希望高效率入门</p>
+        </div>
+        <div class="bottom-box">
+            <div class="tp">
+                <span class="point fl"></span>
+                <div class="line fl"></div>
+                <span class="point fl"></span>
+            </div>
+        </div>
+        <div class="tjxxzh_info">
+            <a href="#" class="item n1">
+                <div class='img-box'>
+                    <div class='img-up'></div>
+                    <div class='img-mid'></div>
+                    <div class='img-down'></div>
+                </div>
+                <div class="desc-box">
+                    <p class='name'>前端小白入门系列课程</p>
+                    <div class='desc'>
+                        <span>5步骤／33门课</span>
+                        <span><i class='iconfont'>&#xe643;</i>2284</span>
+                        <span class='iconfont'>&#xe65a;&#xe65a;&#xe65a;&#xe65a;&#xe65a;</span>
+                    </div>
+                    <p class='content'>从小白到老司机，学会HTML、CSS、JS、jQuery基础，独立开发挂号平台网页！
+                    </p>
+                    <p class='price'>￥499.00</p>
+                </div>
+            </a>
+            <a href="#" class="item n2">
+                <div class='img-box'>
+                    <div class='img-up'></div>
+                    <div class='img-mid'></div>
+                    <div class='img-down'></div>
+                </div>
+                <div class="desc-box">
+                    <p class='name'>前端小白入门系列课程</p>
+                    <div class='desc'>
+                        <span>5步骤／33门课</span>
+                        <span><i class='iconfont'>&#xe643;</i>2284</span>
+                        <span class='iconfont'>&#xe65a;&#xe65a;&#xe65a;&#xe65a;&#xe65a;</span>
+                    </div>
+                    <p class='content'>从小白到老司机，学会HTML、CSS、JS、jQuery基础，独立开发挂号平台网页！
+                    </p>
+                    <p class='price'>￥499.00</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<!--我经常一听就懂-->
+<div class="ytjd">
+    <div class="container">
+        <div>
+            <h2>我经常一听就懂，一上手就懵逼，怎么办？</h2>
+        </div>
+        <ul class="clearfix">
+            <li>
+                <div class='icon_box'></div>
+                <h3>真实案例讲解完爆纸上谈兵</h3>
+                <p> 扎实的知识基础，会让你的进步事半功
+                    倍！完成每门课的学习目标，解锁新的
+                    学习领域，一步一脚印，一定收获满满</p>
+            </li>
+            <li>
+                <div class='icon_box1'></div>
+                <h3>1v1作业批改点对点技能强化</h3>
+                <p>热情的同学和教学团队,会在问答区及时解答你学习上的疑问，1V1作业批改，帮你解决实践过程中遇到的困难</p>
+            </li>
+            <li>
+                <div class='icon_box2'></div>
+                <h3>专业助教团全程线上答疑</h3>
+                <p> 拥有多年教学经验的专家级教学团+一线公司大牛，高超的授课技巧+实战视野，让你理论和实践知识兼得</p>
+            </li>
+            <li>
+                <div class='icon_box3'></div>
+                <h3>免费延期等你拿学习更透彻</h3>
+                <p> 现在加入额外赠送60天学习时间
+                    路径学习期限为
+                    150天 +（赠送60天）= 210天</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--完事具备只等你来-->
+<div class="txpl">
+    <div class="container clearfix">
+        <div class="bt-1">
+            <h2>万事俱备 只等你来</h2>
+        </div>
+        <div class="content clearfix">
+            <ul class="fl">
+                <li>
+                    <div class="pic_box">
+                        <img src="images/5458634b0001120b02200220-100-100.jpg" alt="">
+                    </div>
+                    <p class="names">Danci_cc</p>
+                    <p>
+                        很好的，感觉很适合入门，之前没有接触过前端，
+                        认真听完之后，基本的前端就可以做出来了。课程
+                        配了助教，提问之后助教老师都会及时的回复，而
+                        且感觉特别棒的地方是作业，学完一块之后就会有
+                        布置相应的作业，作业提交之后会有老师批改...</p>
+                </li>
+                <li class="hidden-xs">
+                    <div class="pic_box">
+                        <img src="images/591284b80001672606400640-100-100.jpg" alt="">
+                    </div>
+                    <p class="names">ZJDreaming</p>
+                    <p class="names_pl">不听不知道，一听吓一跳，自己的基础真是差呀!
+                        本来第一次学的是html5与css3实现动态网页,但是
+                        中途发现自己基础薄弱，于是再次缴费这个课程，
+                        这次想好好的把基础打牢，这个课程很清晰，也很
+                        容易懂，特别适合小白入门，感觉还是非常满意...</p>
+                </li>
+                <li class="hidden-sm hidden-xs">
+                    <div class="pic_box">
+                        <img src="images/533e55d10001c34d02000200-100-100.jpg" alt="">
+                    </div>
+                    <p class="names">casey01</p>
+                    <p class="names_pl">
+                        很不错，比以前看的一些视频好多了，因为老师总
+                        是能说出一些我正在疑惑的，很细致，真的很适合
+                        小白入门，不知不觉自己竟然能从一个什么都不会
+                        的变成一个可以做出一个简单网页的人了^_^ 感
+                        觉money没有白花。每次提问基本都很快的解决...</p>
+                </li>
+            </ul>
+        </div>
+        <div  class="yhpl">
+            <a href="#">查看全部403条用户评论</a>
+        </div>
+    </div>
+</div>
+
+<!--路径咨询-->
+<div class="ljzx">
+    <div class="container">
+        <div class="ljzx_bt">
+            <h2>路径咨询</h2>
+        </div>
+        <div class="serch clearfix">
+            <input type="text" placeholder="请输入你的路径咨询问题">
+            <input type="button" value="提问">
+        </div>
+        <div class="ljzx_pl">
+            <div class="ljzx_pl_bt clearfix">
+                <ul>
+                    <li>
+                        <div>
+                            <h4><a href="#" class="ljzx_pl_bt_nr">这是有时间限制的吗？</a></h4>
+                            <p>2017-03-11</p>
+                        </div>
+                        <span>有的，150天的有效期，还有两次的免费延期机会，每次各
+                        延一个月。也就是说你最多可以有210天的学习时间哦。赶快行动吧！
+                        </span>
+                    </li>
+                    <li>
+                        <div>
+                            <h4><a href="#" class="ljzx_pl_bt_nr">和那个599的前端区别在哪里的啊？</a></h4>
+                            <p>2017-03-11</p>
+                        </div>
+                        <span>html5是html的升级。对于初学者，一般建议先学html，然
+                            后再学html5。因为html是最基础的知识，只有学会了基础
+                            才能更好的进阶。《前端小白入门系列课程》路径中是从最
+                        </span>
+                    </li>
+                    <li>
+                        <div>
+                            <h4><a href="#" class="ljzx_pl_bt_nr">这个课程和免费的html/css课程有什么区别吗？</a></h4>
+                            <p>2017-03-11</p>
+                        </div>
+                        <span>路径课程以视频方式配合小案例，详细、系统的讲解，配有
+                            丰富的练习题，做到学与练结合，同时还有上传作业题，有
+                            专业的老师进行点评并给予修改建议。另外，不会的内容还
+                        </span>
+                    </li>
+                    <li class="hidden-sm hidden-xs">
+                        <div>
+                            <h4><a href="#" class="ljzx_pl_bt_nr">打算以PHP工程师为目标，学习前端有用吗？</a></h4>
+                            <p>2017-03-23</p>
+                        </div>
+                        <span>您好，想成为一名合格的PHP工程师，前端是基本功，建议
+                            先修炼前端入门知识后，再继续学习PHP相关内容！
+                        </span>
+                    </li>
+                    <li class="hidden-sm hidden-xs">
+                        <div>
+                            <h4><a href="#" class="ljzx_pl_bt_nr">这些课程跟那些免费的课程有没有重复的？因为觉...</a></h4>
+                            <p>2017-03-24</p>
+                        </div>
+                        <span>您好~首先感谢您对慕课网免费课程的关注。这套职业路径
+                            课程和慕课网的免费课程是不一样的。这套课程是我们精心
+                            从0打造的专为小白用户入门前端开发而设计的。课程是依...
+                        </span>
+                    </li>
+                    <li class="hidden-sm hidden-xs">
+                        <div>
+                            <h4><a href="#" class="ljzx_pl_bt_nr">学完的话，能做项目吗？</a></h4>
+                            <p>2017-03-12</p>
+                        </div>
+                        <span>可以的哦，咱们每个步骤都有一个案例来练习和讲解，最后
+                            的实战是实现的大项目。
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="ljzx_pl_zx">
+                <a href="#">查看全部10条已回复的咨询</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="float-nav hidden-xs" id="show-nav">
+    <h2>前端小白入门系列课程</h2>
+    <div class="txt-box">
+    <ul>
+        <li>
+            <a href="#">详情介绍</a>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont active">&#xe6fc;</i> 职业前景</a>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont">&#xe6fc;</i> 学习成果</a>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont">&#xe6fc;</i> 内容编排</a>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont">&#xe6fc;</i> 推荐组合</a>
+        </li>
+        <li>
+            <a href="#"><i class="iconfont">&#xe6fc;</i> 学习服务</a>
+        </li>
+        <li class="hidden-md hidden-sm hidden-xs">
+            <a href="#">同学评价</a>
+            <span>421</span>
+        </li>
+        <li class="hidden-md hidden-sm hidden-xs">
+            <a href="#">路径咨询</a>
+            <span>10</span>
+        </li>
+        <li class="hidden-md hidden-sm hidden-xs">
+            ￥499.00
+        </li>
+        <li class=" hidden-xs">
+            <a href="#">立即购买</a>
+        </li>
+    </ul>
+    </div>
+</div>
+
+
+
+
+<!--底部-->
+<div class="footer">
+    <div class="container clearfix">
+        <!--左侧下部文字-->
+        <div class="fl">
+            <a href="#">网站首页</a>
+            <a href="#">企业合作</a>
+            <a href="#">人才招聘</a>
+            <a href="#">联系我们</a>
+            <a href="#">讲师招募</a>
+            <a href="#">常见问题</a>
+            <a href="#">意见反馈</a>
+            <a href="#">慕课大学</a>
+            <a href="#">友情链接</a>
+            <p>Copyright © 2017 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+        </div>
+        <div class="fr hidden-sm hidden-xs">
+            <!--底部右侧三个社交小圈圈-->
+            <span><i class="iconfont">&#xe673;</i></span>
+            <span><i class="iconfont">&#xe626;</i></span>
+            <span><i class="iconfont">&#xe698;</i></span>
+        </div>
+    </div>
+</div>
+<!--侧面导航-->
+<div class="aside hidden-xs">
+    <ul>
+        <li><i class="iconfont">&#xe666;</i><span>意见反馈</span></li>
+        <li><i class="iconfont">&#xe635;</i><span>常见问题</span></li>
+        <li><i class="iconfont">&#xe624;</i><span>app下载</span></li>
+        <li><i class="iconfont">&#xe611;</i><span>官方微信</span></li>
+        <li class="return_top"><i class="iconfont">&#xe602;</i><span>返回顶部</span></li>
+    </ul>
+</div>
+
+
+
+
+<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+<script src="js/jquery-1.12.4.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="js/bootstrap.js"></script>
+<!--引入基础js-->
+<script src="js/base.js"></script>
+<!--引入当前js-->
+<script src="js/web.js"></script>
+</body>
+</html>

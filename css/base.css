@@ -1,0 +1,465 @@
+@charset "UTF-8";
+/* 通用设置开始 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button, textarea {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+    font: 12px/150% Microsoft YaHei, Arial, Verdana, "SimSun";
+    color: #666;
+    background: #fff;
+
+}
+
+/*清除浮动最现代、最流行、最简单的方式*/
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.notelll {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f01414;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*慕课红*/
+.col-red {
+    color: #f01414 !important;
+}
+
+/*鼠标hover时的特效*/
+.hover-write:hover {
+    color: #fff;
+!important;
+}
+
+.hover-red:hover {
+    color: #f01414 !important;
+}
+
+/*版心*/
+.w {
+    width: 1154px;
+    margin: 0 auto;
+}
+
+.zindex {
+    z-index: 999;
+}
+
+/*导航*/
+
+.mooc_default {
+    border: none;
+    border-radius: 0;
+    height: 72px;
+    background: #07111b;
+    margin-bottom: 0;
+}
+.mooc_default a {
+    background: #07111b;
+}
+.mooc_default .navbar-brand {
+    color: #777;
+    height: 72px;
+    line-height: 50px;
+}
+.mooc_default .navbar-brand span {
+    font-size: 50px;
+}
+.mooc_default .navbar-brand span:first-child {
+    color: red;
+}
+.mooc_default .navbar-brand span:last-child {
+    color: black;
+}
+.mooc_default .navbar-brand:hover,
+.mooc_default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+/*搜索框*/
+
+.mooc_default .navbar-form {
+    height: 34px;
+    width: 25%;
+    /*background-color: skyblue;*/
+    margin-top: 17px;
+    position: relative;
+}
+.mooc_default .navbar-form .form-group {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.mooc_default .navbar-form input {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    background: #07111b;
+}
+.mooc_default .navbar-form i {
+    text-align: center;
+    line-height: 24px;
+    position: absolute;
+    right: 3%;
+    top: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    height: 24px;
+    width: 30px;
+    border-radius: 15px;
+}
+.mooc_default .navbar-form em {
+    width: 20%;
+    height: 23px;
+    background: #232932;
+    color: #8a8f93;
+    position: absolute;
+    top: 5px;
+    text-align: center;
+    border-radius: 12px;
+    line-height: 23px;
+    cursor: pointer;
+}
+.mooc_default .navbar-form em:nth-child(2) {
+    right: 28%;
+}
+
+.mooc_default .navbar-form em:nth-child(3) {
+    right: 7%;
+}
+
+.mooc_default .navbar-form em:hover {
+    background: #2a313b;
+    color: #acb1b5;
+}
+
+
+
+.mooc_default .navbar-text {
+    color: #777;
+}
+.mooc_default .navbar-nav > li > a {
+    color: #777;
+    height: 72px;
+    line-height: 40px;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.mooc_default .navbar-nav > li:nth-last-child(2) {
+    cursor: default;
+    color: #777;
+    height: 72px;
+    line-height: 70px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/*app 下载*/
+.mooc_default .navbar-nav > li:first-child {
+    position: relative;
+}
+.mooc_default .navbar-nav > li:first-child div {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: -207px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/*购物车*/
+.mooc_default .navbar-nav > li:nth-child(2) {
+    position: relative;
+}
+.mooc_default .navbar-nav > li:nth-child(2) div {
+    display: none;
+    position: absolute;
+    top: 69px;
+    left: -210px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+/*a hover  效果*/
+.mooc_default .navbar-nav > li > a:hover,
+.mooc_default .navbar-nav > li > a:focus {
+    color: #fff;
+    background-color: #07111b;;
+    /*border-bottom: 3px solid red;*/
+}
+.mooc_default .navbar-nav > .active > a,
+.mooc_default .navbar-nav > .active > a:hover,
+.mooc_default .navbar-nav > .active > a:focus {
+    color: #fff;
+}
+.mooc_default .navbar-nav > .disabled > a,
+.mooc_default .navbar-nav > .disabled > a:hover,
+.mooc_default .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.mooc_default .navbar-toggle {
+    border-color: #ddd;
+}
+.mooc_default .navbar-toggle:hover,
+.mooc_default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.mooc_default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.mooc_default .navbar-collapse,
+.mooc_default .navbar-form {
+    border-color: #e7e7e7;
+}
+.mooc_default .navbar-nav > .open > a,
+.mooc_default .navbar-nav > .open > a:hover,
+.mooc_default .navbar-nav > .open > a:focus {
+    color: #555;
+    /*background-color: #e7e7e7;*/
+}
+@media (max-width: 767px) {
+    .mooc_default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .mooc_default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .mooc_default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-cozlor: transparent;
+    }
+    .mooc_default .navbar-nav .open .dropdown-menu > .active > a,
+    .mooc_default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .mooc_default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .mooc_default .navbar-nav .open .dropdown-menu > .disabled > a,
+    .mooc_default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .mooc_default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.mooc_default .navbar-link {
+    color: #777;
+}
+.mooc_default .navbar-link:hover {
+    color: #333;
+}
+.mooc_default .btn-link {
+    color: #777;
+}
+.mooc_default .btn-link:hover,
+.mooc_default .btn-link:focus {
+    color: #333;
+}
+.mooc_default .btn-link[disabled]:hover,
+fieldset[disabled] .mooc_default .btn-link:hover,
+.mooc_default .btn-link[disabled]:focus,
+fieldset[disabled] .mooc_default .btn-link:focus {
+    color: #ccc;
+}
+
+/*底部样式*/
+.footer {
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    background: #07111b;
+
+}
+
+.footer > .container {
+    /*width: 1130px;*/
+    padding-top: 30px;
+}
+
+.footer > .container a {
+    color: #c8cdd2;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.footer > .container a:hover {
+    color: #fff;
+}
+
+.footer > .container p {
+    color: #787d82;
+    font-size: 12px;
+    display: block;
+    height: 30px;
+    /*width: 600px;*/
+    margin-top: 14px;
+}
+
+.footer > .container > .fr > span {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #5a5d5f;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 32px;
+    color: #000;
+}
+
+.footer > .container > .fr > span > i {
+    font-size: 24px;
+}
+
+/*侧边栏导航*/
+.aside {
+    width: 56px;
+    height: 286px;
+    /*228*/
+    background: #fff;
+    position: fixed;
+    right: 0;
+    top: 200px;
+    box-shadow: -1px 1px 5px #ccc;
+    color: #55595c;
+}
+.aside>ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.aside>ul>li {
+    /*background: greenyellow;*/
+    height: 100%;
+    width: 56px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.aside>ul>li+li {
+    border-top: 1px solid #ccc;
+}
+.aside>ul>li>i {
+    font-size: 24px;
+    /*display: none;*/
+}
+.aside>ul>li>span {
+    display: none;
+    font-size: 12px;
+    color: #000;
+}
+.return_top {
+    display: none;
+}
+
+
+
+
+/*通用字体样式，默认第三种引入 unicode引入*/
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/iconfont.woff') format('woff'),
+    url('../fonts/iconfont.ttf') format('truetype'),
+    url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 通用设置结束 */
+
